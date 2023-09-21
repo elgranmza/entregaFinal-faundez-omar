@@ -1,8 +1,7 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import './checkoutFormStyles.css'; 
 
-
-const checkoutForm = ({ onConfirm }) => {
+const CheckoutForm = ({ onConfirm }) => {
     const [name, setName] = useState('');
     const [phone, setPhone] = useState('');
     const [email, setEmail] = useState('');
@@ -41,4 +40,4 @@ const checkoutForm = ({ onConfirm }) => {
     );
 };
 
-export default checkoutForm;
+export default CheckoutForm;

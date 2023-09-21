@@ -2,12 +2,13 @@ import React, { useState, useContext } from "react";
 import { db } from '../../service/firebase/firebaseConfig';
 import { getDocs, collection, query, where, addDoc } from 'firebase/firestore'; 
 import { Timestamp, writeBatch } from 'firebase/firestore';
-
+import { CartContext } from '../context/Cartcontext'; 
+import CheckoutForm from './checkoutForm/checkoutForm'; 
 
 const Checkout = () => {
     const [loading, setLoading] = useState(false);
     const [orderId, setOrderId] = useState('');
-    const { cart, total, clearCart } = useContext(CartContext);
+    const { cart, total, clearCart } = useContext(CartContext); 
 
     const createOrder = async ({ name, phone, email }) => {
         setLoading(true);
@@ -21,7 +22,7 @@ const Checkout = () => {
                 },
                 items: cart,
                 total: total,
-                date: timestamp.fromDate(new Date())
+                date: Timestamp.fromDate(new Date()) 
             };
             const batch = writeBatch(db);
 
