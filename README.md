@@ -1,70 +1,63 @@
-# Getting Started with Create React App
+# Nombre del Proyecto
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Descripción breve de tu proyecto.
 
-## Available Scripts
+## Instalación
 
-In the project directory, you can run:
+Asegúrate de tener Node.js y npm (o yarn) instalados en tu sistema antes de continuar.
 
-### `npm start`
+1. Clona este repositorio o descárgalo como un archivo ZIP.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+```bash
+https://github.com/elgranmza/entregaFinal-faundez-omar.git
+Navega al directorio del proyecto.
+bash
+Copy code
+cd tuproyecto
+Instala las dependencias utilizando npm o yarn.
+bash
+Copy code
+npm install
+# o
+yarn install
+Configuración
+Firebase
+Crea un proyecto en Firebase.
+Configura la autenticación y la base de datos de Firestore según tus necesidades.
+Copia la configuración de Firebase (objeto de configuración) y pégala en un archivo llamado firebaseConfig.js en la carpeta src.
+Ejemplo de firebaseConfig.js:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+javascript
+Copy code
+import { initializeApp } from 'firebase/app';
 
-### `npm test`
+const firebaseConfig = {
+  apiKey: 'TU_API_KEY',
+  authDomain: 'TU_AUTH_DOMAIN',
+  projectId: 'TU_PROJECT_ID',
+  storageBucket: 'TU_STORAGE_BUCKET',
+  messagingSenderId: 'TU_MESSAGING_SENDER_ID',
+  appId: 'TU_APP_ID',
+};
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+const firebaseApp = initializeApp(firebaseConfig);
 
-### `npm run build`
+export default firebaseApp;
+React Router Dom
+Si aún no has instalado React Router Dom, puedes hacerlo utilizando el siguiente comando:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+bash
+Copy code
+npm install react-router-dom
+# o
+yarn add react-router-dom
+Luego, configura las rutas de tu aplicación en el archivo src/App.js o en componentes específicos según tu estructura de proyecto.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Uso
+Describe cómo utilizar y ejecutar tu aplicación.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Contribución
+Si deseas contribuir a este proyecto, sigue estos pasos:
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Contacto
+andresdelmu@gmail.com
