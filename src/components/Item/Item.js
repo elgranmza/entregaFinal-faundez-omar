@@ -1,7 +1,7 @@
 import React from "react";
 import './Item.css';
 
-const Item = ({ name, img, price, stock }) => {
+const Item = ({ name, pictureUrl, price, stock }) => {
 
     return (
         <article className="card-item">
@@ -11,7 +11,7 @@ const Item = ({ name, img, price, stock }) => {
                 </h2>
             </div>
             <div>
-                <img src={img} alt={name} className="item-img" />
+                <img src={pictureUrl} alt={name} className="item-img" />
             </div>
             <div>
                 <p className="item-info">
@@ -26,3 +26,4 @@ const Item = ({ name, img, price, stock }) => {
 };
 
 export default Item;
+

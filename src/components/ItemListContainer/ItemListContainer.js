@@ -13,17 +13,18 @@ const ItemListContainer = ({ greeting }) => {
     useEffect(() => {
         const fetchProducts = async () => {
             setLoading(true);
-
+    
             try {
+                console.log('categoryId:', categoryId); 
                 const collectionRef = categoryId
                     ? query(collection(db, 'products'), where('category', '==', categoryId))
                     : collection(db, 'products');
-
                 const response = await getDocs(collectionRef);
                 const productsAdapted = response.docs.map(doc => {
                     const data = doc.data();
                     return { id: doc.id, ...data };
                 });
+                console.log('products:', productsAdapted); 
                 setProducts(productsAdapted);
             } catch (error) {
                 console.error('Error al obtener productos:', error);
@@ -31,9 +32,10 @@ const ItemListContainer = ({ greeting }) => {
                 setLoading(false);
             }
         };
-
+    
         fetchProducts();
     }, [categoryId]);
+    
 
     return (
         <div>
