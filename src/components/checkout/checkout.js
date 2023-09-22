@@ -22,6 +22,7 @@ const Checkout = () => {
                 },
                 items: cart,
                 total: total(),
+
                 date: Timestamp.fromDate(new Date()) 
             };
             const batch = writeBatch(db);
