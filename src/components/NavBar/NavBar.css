@@ -1,0 +1,40 @@
+
+.navbar {
+    color: white; 
+    padding: 10px; 
+}
+
+
+.navbar-brand {
+    font-size: 24px; 
+    font-weight: bold; 
+    text-decoration: none; 
+}
+
+
+.navbar-item {
+    color: white; 
+    text-decoration: none;
+    margin-right: 20px; 
+}
+
+
+.ActiveOption {
+    font-weight: bold; 
+    color: #FFA500; 
+}
+
+.Categories {
+    
+    margin-bottom: 20px; 
+    justify-content: space-between;
+}
+
+.Option {
+    margin-bottom: 10px;
+    margin-right: 10px; 
+}
+
+
+
+
